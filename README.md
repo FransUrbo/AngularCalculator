@@ -31,6 +31,8 @@ We know that
 2) 1MOA @ 100 yards = 1.047"
 3) 1MIL = 3.38MOA
 4) 1MIL @ 100 meters = 9.999cm
+5) 1" = 25.4mm
+6) 1ft = 12" = 304.8mm
 
 # Licensing
 It, both the source code and the application, is distributed under
