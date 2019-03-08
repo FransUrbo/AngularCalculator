@@ -3,22 +3,30 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_mil2moa"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_mil2moa"
-        app:showAsAction="withText" />
-    <item
         android:id="@+id/navigation_moa2mil"
+        android:checkable="false"
+        android:checked="false"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_moa2mil"
         app:showAsAction="withText" />
     <item
+        android:id="@+id/navigation_mil2moa"
+        android:checkable="false"
+        android:checked="false"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_mil2moa"
+        app:showAsAction="withText" />
+    <item
         android:id="@+id/navigation_moa2length"
+        android:checkable="false"
+        android:checked="false"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_moa2length"
         app:showAsAction="withText" />
     <item
         android:id="@+id/navigation_length2moa"
+        android:checkable="false"
+        android:checked="false"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_length2moa"
         app:showAsAction="withText" />

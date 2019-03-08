@@ -18,16 +18,16 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_moa2mil:
-                    mTextMessage.setText(R.string.title_moa2mil);
+                    setContentView(R.layout.moa2mil);
                     return true;
                 case R.id.navigation_mil2moa:
-                    mTextMessage.setText(R.string.title_mil2moa);
+                    setContentView(R.layout.mil2moa);
                     return true;
                 case R.id.navigation_moa2length:
-                    mTextMessage.setText(R.string.title_moa2length);
+                    setContentView(R.layout.moa2length);
                     return true;
                 case R.id.navigation_length2moa:
-                    mTextMessage.setText(R.string.title_length2moa);
+                    setContentView(R.layout.length2moa);
                     return true;
             }
             return false;

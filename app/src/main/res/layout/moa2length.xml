@@ -39,7 +39,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="96dp"
         android:text="@string/moa"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp"
@@ -52,7 +52,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:text="@string/convert"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp"
@@ -61,10 +61,8 @@
 
     <EditText
         android:id="@+id/input_range"
-        android:layout_width="94dp"
+        android:layout_width="102dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/range"
@@ -77,11 +75,9 @@
 
     <EditText
         android:id="@+id/input_distance"
-        android:layout_width="94dp"
+        android:layout_width="102dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="87dp"
         android:ems="10"
         android:hint="@string/moa"
         android:importantForAutofill="no"
@@ -91,27 +87,77 @@
         app:layout_constraintTop_toBottomOf="@+id/input_range"
         tools:targetApi="o" />
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="238dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
-        android:scrollbars="none"
+    <RadioGroup
+        android:id="@+id/distance_range"
+        android:layout_width="145dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="20dp"
+        android:checkedButton="@+id/distance_yard"
+        app:layout_constraintStart_toEndOf="@+id/input_range"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <RadioButton
+            android:id="@+id/distance_yard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yard" />
+
+        <RadioButton
+            android:id="@+id/distance_feet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/feet" />
+
+        <RadioButton
+            android:id="@+id/distance_meter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/meter" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/distance_distance"
+        android:layout_width="145dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        android:checkedButton="@+id/distance_inch"
         app:layout_constraintStart_toEndOf="@+id/text_convert"
-        app:layout_constraintTop_toBottomOf="@+id/input_distance"
-        tools:itemCount="3"
-        tools:listitem="@android:layout/simple_list_item_single_choice" />
+        app:layout_constraintTop_toBottomOf="@+id/input_distance">
+
+        <RadioButton
+            android:id="@+id/distance_inch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/inch" />
+
+        <RadioButton
+            android:id="@+id/distance_cm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cm" />
+
+        <RadioButton
+            android:id="@+id/distance_mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mm" />
+    </RadioGroup>
 
     <Button
         android:layout_width="115dp"
         android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/calculate"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_convert" />
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"

@@ -12,4 +12,10 @@
     <string name="range">Range</string>
     <string name="distance">Distance</string>
     <string name="convert">Convert</string>
+    <string name="yard">Yards</string>
+    <string name="feet">Feet</string>
+    <string name="meter">Meter</string>
+    <string name="inch">Inch</string>
+    <string name="cm">Centimeter</string>
+    <string name="mm">Milimeter</string>
 </resources>
