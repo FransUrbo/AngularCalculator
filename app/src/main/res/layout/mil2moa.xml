@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mil2moa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_mil2moa"
+        android:textSize="30sp"
+        android:typeface="normal"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/title_mil2moa" />
+
+    <TextView
+        android:id="@+id/text_range"
+        android:layout_width="124dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/mil"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/text_precision2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/precision"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_range"
+        tools:text="Precision" />
+
+    <EditText
+        android:id="@+id/input_range"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/mil"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/text_range"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/input_precision2"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/zero2nine"
+        android:inputType="numberSigned"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/text_precision2"
+        app:layout_constraintTop_toBottomOf="@+id/input_range"
+        tools:targetApi="o" />
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/calculate"
+        app:layout_constraintStart_toEndOf="@+id/input_precision2"
+        app:layout_constraintTop_toBottomOf="@+id/input_range" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+</android.support.constraint.ConstraintLayout>

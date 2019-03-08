@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">Angular Calculator</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_mil2moa">MIL to MOA</string>
+    <string name="title_moa2mil">MOA to MIL</string>
+    <string name="title_moa2length">MOA to Length</string>
+    <string name="title_length2moa">Length to MOA</string>
+    <string name="precision">Precision</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="moa">MOA</string>
+    <string name="mil">MIL</string>
+    <string name="zero2nine">0–9</string>
+    <string name="range">Range</string>
+    <string name="distance">Distance</string>
+    <string name="convert">Convert</string>
 </resources>
