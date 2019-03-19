@@ -34,6 +34,33 @@ We know that
 5) 1" = 25.4mm
 6) 1ft = 12" = 304.8mm
 
+### Formulas
+#### Screen 1 - MOA to MIL
+* xMOA * 0.30MIL
+
+#### Screen 2 - MIL to MOA
+* xMIL * 3.38MOA
+
+#### Screen 3 - MOA to Length
+* xYARD
+* xFEET
+* xMETER
+
+* yINCH
+* yCENTIMETER
+* yMILIMETER
+
+* zMOA
+
+#### Screen 4 - Length to MOA
+* xYARD
+* xFEET
+* xMETER
+
+* yINCH
+* yCENTIMETER
+* yMILIMETER
+
 # Licensing
 It, both the source code and the application, is distributed under
 the GNU General Public License v3 (see the LICENSE file).
